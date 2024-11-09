@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Spirit Animal!!</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+	<style type="text/css">
+		body{
+            background-color: #fff6ed;
+            font-family: 'Montserrat';
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1{
+            font-family:'Montserrat'
+            color: #282828;
+            margin: 10px;
+        }
+        input{
+        	font-family: 'Montserrat';
+            margin: 5px;
+            font-size: 1em;
+            padding: 8px;
+        }
+        button {
+        	font-family: 'Montserrat';
+            margin: 5px;
+            font-size: 1em;
+            padding: 10px 15px;
+            background-color: #4b2e2a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+        button:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+        #output{
+            font-size: 1.5em;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+	<div class = "topDiv"; style="text-align:center">
+		<h1>-----------------------------------------------------------------</h1>
+	</div>	
+	<h1>Find Your Spirit Animal!</h1>
+	<p>Enter your name to see your assigned animal:</p>
+
+	<input type="text" id="nameInput" placeholder="Enter your name" />
+	<button onclick="generate()">Generate Animal</button>
+
+	<div id="output"></div>
+
+	<script src="random.js"></script>
+	<div class = "topDiv"; style="text-align:center">
+		<h1>-----------------------------------------------------------------</h1>
+
+</body>
+</html>
